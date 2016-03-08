@@ -2,6 +2,14 @@
   <title>Opining</title>
 </head>
 
-<body>
+<body ng-app = "OpiningApp">
+
+    <div ng-controller="testeCtrl as teste">
+        <form ng-submit="teste.doLogin(user)">
+            <input type="text" ng-model="teste.user.login"/>
+            <input type="text" ng-model="teste.user.password"/>
+            <input type="submit" value="Entrar"/>
+        </form>
+    </div>
 
 </body>
