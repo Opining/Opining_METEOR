@@ -1,15 +1,12 @@
 <head>
-  <title>Opining</title>
+    <meta charset="UTF-8">
+    <title>Opining</title>
 </head>
 
-<body ng-app = "OpiningApp">
+<body ng-app="OpiningApp">
+    <div ng-cloak>
+        
+        <div ui-view></div>
 
-    <div ng-controller="testeCtrl as teste">
-        <form ng-submit="teste.doLogin(user)">
-            <input type="text" ng-model="teste.user.login"/>
-            <input type="text" ng-model="teste.user.password"/>
-            <input type="submit" value="Entrar"/>
-        </form>
     </div>
-
 </body>

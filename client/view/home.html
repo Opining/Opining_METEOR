@@ -1,0 +1,35 @@
+<md-toolbar>
+    
+    <div class="md-toolbar-tools md-whiteframe-4dp">
+        
+        <md-button aria-label="comment" class="md-icon-button">
+            <md-icon md-svg-src="/icons/menu-button.svg"></md-icon>
+        </md-button>
+
+        <h1 ng-bind="ctrl.appName"></h1>
+
+        <div flex></div>
+
+        <md-button aria-label="comment" class="md-icon-button">
+            <md-icon md-svg-src="/icons/painter-palette.svg"></md-icon>
+        </md-button>
+
+        <md-button aria-label="label" class="md-icon-button">
+            <md-icon md-svg-src="/icons/memory-chip.svg"></md-icon>
+        </md-button>
+
+        <md-button aria-label="photo" class="md-icon-button">
+            <md-icon md-svg-src="/icons/add-comment-button.svg"></md-icon>
+        </md-button>
+
+    </div>
+
+</md-toolbar>
+
+<br/>
+<br/>
+
+<md-input-container>
+    <label>Digite o nome do APP</label>
+    <input ng-model="ctrl.appName">
+</md-input-container>
